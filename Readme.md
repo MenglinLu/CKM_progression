@@ -25,7 +25,7 @@ This package was trained and tested under Ubuntu 18.04. Modifications may be nec
 ### sustain
 - `sustain.py`: Used for subtype and stage inference of early CKM syndrome
 - `sustain-cv.py`: Used for the selection of the optimal number of subtypes
-- `MyDataset.py`: Sample dataset for input
+- `MyDataset.csv`: Sample dataset for input
 
 ### survival analysis
 - `HR_subtypes.R`: Used to calculate the HR values for the long-term risk of different outcomes for each subtype

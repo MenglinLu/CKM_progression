@@ -11,7 +11,7 @@ import os
 import numpy as np
 from tqdm import tqdm
 
-data_disease_label = pd.read_csv('data_disease_surv.csv')
+data_disease_label = pd.read_csv('data_disease_surv.csv') ###Datasheet indicating whether patients have specific conditions
 data = pd.read_csv('./result_sustain.csv')
 data = pd.merge(left=data, right=data_disease_label, how='left', on='Eid')
 

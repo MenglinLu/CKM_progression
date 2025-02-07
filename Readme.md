@@ -2,8 +2,8 @@
 
 ## Overview
 
-This library is designed to identify subtypes of early CKM syndrome and track the progression of the disease. It also analyzes the association between the inferred subtypes and different outcomes, and proposes a model that integrates subtype and progression information into CVD prediction.  
-In the inference of subtypes and stages, participants' kidney and metabolic indicators are used as input data, with the corresponding subtype and stage for each patient being the output. The code for the SuStaIn model is referenced from [https://github.com/ucl-pond/pySuStaIn](https://github.com/ucl-pond/pySuStaIn).  
+This library is designed to identify subtypes of early-stage CKM syndrome and track the disease progression trajectories. It also analyzes the association between the inferred subtypes and different outcomes, and proposes a model that integrates subtype and progression information into CVD prediction.  
+In the inference of subtypes and stages, participants' renal and metabolic indicators are used as input data, with the corresponding subtype and stage for each patient being the output. The code for the SuStaIn model is referenced from [https://github.com/ucl-pond/pySuStaIn](https://github.com/ucl-pond/pySuStaIn).  
 In the prediction based on the constructed model, the inferred subtypes and stages, along with the indicators included in the traditional PCE model, are used as input data, with the 10-year CVD risk as the output.
 
 ## OS requirements

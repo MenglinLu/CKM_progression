@@ -65,8 +65,6 @@ IS_decreasing = np.mean(data_stan,axis=0)<np.mean(data_control_stan,axis=0)
 
 data[['eGFR','HDLc','Albumin','Phosphate']] = data[['eGFR','HDLc','Albumin','Phosphate']] * -1
 
-data_contol = data[data['Flag_disease']==0]
-
 zdata = pd.DataFrame(data,copy=True)
 
 for biomarker in biomarkers:

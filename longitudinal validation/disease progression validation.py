@@ -1,17 +1,11 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu May 16 14:50:51 2024
-
-@author: Lenovo
-"""
-
 
 import pandas as pd
 import os
 import numpy as np
 from tqdm import tqdm
 
-data_disease_label = pd.read_csv('data_disease_surv_followup.csv')
+data_disease_label = pd.read_csv('data_disease_surv_followup.csv') ##disease follow-up data
 data = pd.read_csv('./result_sustain.csv')
 data = pd.merge(left=data, right=data_disease_label, how='left', on='Eid')
 

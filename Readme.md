@@ -18,6 +18,7 @@ This package was trained and tested under Ubuntu 18.04. Modifications may be nec
 - `pySuStaIn`
 - `Pillow`
 - `tqdm`
+- `statsmodels`
 
 ## R Dependencies
 

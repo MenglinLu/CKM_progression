@@ -24,7 +24,7 @@ biomarker = ['Creatinine','CysC', 'Phosphate', 'Urea', 'eGFR', 'Urate',
 
 biomarker_raw = biomarker
 
-###-----Normalization-----
+###-----Normalization for visualization-----
 stan = MinMaxScaler()
 result_s3_standard = pd.DataFrame(stan.fit_transform(result_s3[biomarker_raw]),columns=biomarker)
 result_s3_standard['ml_subtype'] = list(result_s3['ml_subtype'])

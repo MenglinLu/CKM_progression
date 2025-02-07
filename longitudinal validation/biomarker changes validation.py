@@ -11,7 +11,6 @@ from kde_ebm import plotting
 import warnings
 warnings.filterwarnings("ignore",category=cbook.mplDeprecation)
 
-from pySuStaIn.ZscoreSustain  import ZscoreSustain
 from pySuStaIn.MixtureSustain import MixtureSustain, MixtureSustainData
 import sklearn.model_selection
 import pylab
@@ -67,8 +66,6 @@ data_control_stan = (np.array(data_control[biomarkers])-mean_control)/std_contro
 IS_decreasing = np.mean(data_stan,axis=0)<np.mean(data_control_stan,axis=0)
 
 data[['eGFR','HDLc','Albumin','Phosphate']] = data[['eGFR','HDLc','Albumin','Phosphate']] * -1
-
-data_contol = data[data['Flag_disease']==0]
 
 zdata = pd.DataFrame(data,copy=True)
 

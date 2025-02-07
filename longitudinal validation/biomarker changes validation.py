@@ -163,16 +163,13 @@ biomarkers_baseline = ['Creatinine_ins0', 'CysC_ins0', 'Phosphate_ins0', 'Urate_
                     'HDLc_ins0','SBP_ins0','DBP_ins0']
 
 ###-----Biomarker statistics of validation cohort at baseline-----
-mean_baseline = data_val[biomarkers_baseline+['ml_subtype']].groupby('ml_subtype').mean()
+data_baseline = data_val[biomarkers_baseline+['ml_subtype']]
 
 ###-----Biomarker statistics of patients remained in Phase 1 at follow-up-----
 data_ins1_inphase1 = data_val[data_val['phase_ins1']==1]
-mean_ins1_inphase1 = data_ins1_inphase1[biomarkers+['ml_subtype']].groupby('ml_subtype').mean()
 
 ###-----Biomarker statistics of patients progressed to Phase 2 at follow-up-----
 data_ins1_inphase2 = data_val[data_val['phase_ins1']==2]
-mean_ins1_inphase2 = data_ins1_inphase2[biomarkers+['ml_subtype']].groupby('ml_subtype').mean()
 
 ###-----Biomarker statistics of patients progressed to Phase 3 at follow-up-----
 data_ins1_inphase3 = data_val[data_val['phase_ins1']==3]
-mean_ins1_inphase3 = data_ins1_inphase3[biomarkers+['ml_subtype']].groupby('ml_subtype').mean()

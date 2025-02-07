@@ -11,7 +11,7 @@ import os
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
-data_biomarker = pd.read_csv('data_biomarker_raw.csv')  ###The original biomarker data without transformed
+data_biomarker = pd.read_csv('data_biomarker_raw.csv')  ###The original biomarker data without z-score transformation
 data = pd.read_csv('./result_sustain.csv')
 data = pd.merge(left=data[['Eid','ml_subtype','ml_stage','Flag_disease']], right=data_biomarker, how='left', on='Eid')
 

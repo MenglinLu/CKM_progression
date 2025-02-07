@@ -133,8 +133,8 @@ This package was trained and tested under Ubuntu 18.04. Modifications may be nec
 - `HR_subtype-Lifestyle.R`: Used to calculate the HR values of healthy lifestyle behaviours for the long-term risk of CVD in comparison to unhealthy lifestyle behaviours across different subtypes and phases
 
 ## How to install and run SuStaIn model using sample data
-1. conda create -n sustain_test python=3.8
-2. conda activate sustain_test
+1. Create a virtual environment‌: conda create -n sustain_test python=3.8
+2. Activate the virtual environment: conda activate sustain_test
 3. Install the pySuStaIn package referring to https://github.com/ucl-pond/pySuStaIn: pip install git+https://github.com/ucl-pond/pySuStaIn
 4. Git clone this repo: git clone https://github.com/MenglinLu/CKM_progression.git
 5. Navigate to the main directory and run `pip install -r requirements.txt`

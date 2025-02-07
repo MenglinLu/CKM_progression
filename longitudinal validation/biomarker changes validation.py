@@ -113,7 +113,7 @@ zdata_val = pd.DataFrame(data_val,copy=True)
 
 for biomarker in biomarkers:
     mod = smf.ols('%s ~ Age + Sex + Smoker1+Alcohol1'%biomarker, 
-                  data=data_val[data_val.Flag_disease==0]
+                  data=data_val[data_val.Flag_disease==0] ##healthy controls
                  ).fit() # fit model    
     
     # get the "predicted" values for all subjects based on the control model parameters

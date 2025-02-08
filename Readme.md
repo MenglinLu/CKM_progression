@@ -39,12 +39,6 @@ This package was trained and tested under Ubuntu 18.04. Modifications may be nec
 - `sample_data.csv`: Sample dataset for input
 - `simfuncs.py`: For implementation of SuStaIn model
 
-### clinical profiles
-- `biomarker statistics.py`: Used for calculating the mean values of biomarkers across different subtypes and phases
-- `biomarker changes plotting.R`: Used for plotting radar charts of biomarkers by subtypes and phases
-- `disease proportion statistics.py`: Used for calculating the proportion of various conditions across different subtypes and phases
-- `disease progression trajectories plotting.R`: Used for plotting percentage-stacked area charts of diseases by subtypes and phases
-
 ### longitudinal validation
 - `biomarker changes validation.py`: Used for analyzing observed biomarker distributions at follow-up for longitudinal validation
 - `disease progression validation.py`: Used for calculating disease proportion at follow-up for longitudinal validation

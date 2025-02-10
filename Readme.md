@@ -39,10 +39,6 @@ This package was trained and tested under Ubuntu 18.04. Modifications may be nec
 - `sample_data.csv`: Sample dataset for input
 - `simfuncs.py`: For implementation of SuStaIn model
 
-### longitudinal validation
-- `biomarker changes validation.py`: Used for analyzing observed biomarker distributions at follow-up for longitudinal validation
-- `disease progression validation.py`: Used for calculating disease proportion at follow-up for longitudinal validation
-
 ### survival analysis
 - `HR_subtypes.R`: Used to calculate the HR values for the long-term risk of different outcomes for each subtype
 - `HR_phases.R`: Used to calculate the HR values for the long-term risk of different outcomes for each subtype and each phase
@@ -58,6 +54,10 @@ This package was trained and tested under Ubuntu 18.04. Modifications may be nec
 ### lifestyle intervention
 - `HR_subtype-Lifestyle.R`: Used to calculate the HR values of healthy lifestyle behaviours for the long-term risk of CVD in comparison to unhealthy counterparts for each subtype
 - `HR_subtype-Lifestyle.R`: Used to calculate the HR values of healthy lifestyle behaviours for the long-term risk of CVD in comparison to unhealthy lifestyle behaviours across different subtypes and phases
+
+### longitudinal validation
+- `biomarker changes validation.py`: Used for analyzing observed biomarker distributions at follow-up for longitudinal validation
+- `disease progression validation.py`: Used for calculating disease proportion at follow-up for longitudinal validation
 
 ## How to install and run SuStaIn model using sample data
 1. Create a virtual environment‌: `conda create -n sustain_test python=3.8`
